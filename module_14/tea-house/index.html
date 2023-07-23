@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Site Title -->
+        <title>TEA HOUSE</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9248/9248278.png" type="image/x-icon">
+
+        <!-- Manrope Font -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+            .primary-font{
+                font-family: 'Manrope', sans-serif;
+            }
+        </style>
+
+        <!-- Daisy Ui & Tailwindcss -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- TailwindCSS CUSTOM COLOR -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    'primary-text': '#1C1C1C',
+                    'secondary-text': '#777',
+                  }
+                }
+              }
+            }
+        </script>
+    </head>
+    <body class="primary-font">
+
+        <!-- HEADER NOT ALLOW-->
+        <header></header>
+
+
+        <main>
+            <!-- Banner -->
+            <section>
+                <div class="container mx-auto px-4">
+                    <div class="hero min-h-screen">
+                        <div class="hero-content flex-col-reverse lg:flex-row">
+                            <!-- Banner Text -->
+                          <div class="text-center lg:text-left">
+                            <h1 class="text-3xl md:text-5xl lg:text-6xl font-bold text-primary-text">
+                                It's good <br>
+                                tea time at The <br>
+                                Tea House
+                            </h1>
+                            <p class="py-6 text-secondary-text text-lg">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+                            <button class="btn btn-primary">Explore More
+                                <span><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            </button>
+                          </div>
+                          <!-- Banner Images -->
+                          <div>
+                            <img src="images/banner.png" class="" />
+                            <!-- Rating -->
+                            <div class="w-max rounded-lg relative -top-10 left-3 sm:-top-20 sm:left-24 lg:-top-20 lg:left-28 bg-white flex items-center gap-4 shadow-2xl p-5">
+                                <span class="text-2xl text-amber-500"><i class="fa-solid fa-star"></i></span>
+                                <div class="">
+                                    <h4 class="text-primary-text text-xl lg:text-3xl font-extrabold">5.00</h4>
+                                    <span class="text-secondary-text">Trust Pilot Ratings</span>
+                                </div>
+                            </div>
+                          </div>    
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </main>
+
+        
+
+
+
+
+
+        <!-- Font Awesome Icon -->
+        <script src="https://kit.fontawesome.com/fbcff7765f.js" crossorigin="anonymous"></script>
+    </body>
+</html>
