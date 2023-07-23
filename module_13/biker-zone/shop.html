@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Shop | Biker ZONE</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9248/9248278.png" type="image/x-icon" />
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+            .poppins {
+                font-family: "Poppins", sans-serif;
+            }
+        </style>
+
+        <!-- dais Ui & Tailwind CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- custom classes -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: "#da373d",
+                            "btn-bike": "#E76F51",
+                            transparent: "transparent",
+                            "main-slider": "#fdf1ee",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="poppins">
+
+        <header class="bg-transparent sticky top-0 backdrop-blur-sm shadow-md z-10">
+            <nav class="container m-auto">
+                <div class="navbar">
+                    <div class="flex-1">
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a class="font-semibold" href="shop.html">Shop</a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="contact-us.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <a class="cursor-pointer text-2xl sm:text-3xl md:text-4xl font-bold">Bike Dekho</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu text-base menu-horizontal px-1">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a class="font-semibold" href="shop.html">Shop</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <a class="btn bg-btn-bike text-white hover:btn-error">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <!-- Mamba Ui | Stats -->
+            <section class="p-6 bg-gray-100 text-gray-800">
+                <div class="container grid grid-cols-1 gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-4">
+                    <div class="flex p-4 space-x-4 rounded-lg md:space-x-6 bg-gray-50 text-gray-800">
+                        <div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 bg-rose-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="h-9 w-9 text-gray-100">
+                                <polygon points="160 96.039 160 128.039 464 128.039 464 191.384 428.5 304.039 149.932 304.039 109.932 16 16 16 16 48 82.068 48 122.068 336.039 451.968 336.039 496 196.306 496 96.039 160 96.039"></polygon>
+                                <path d="M176.984,368.344a64.073,64.073,0,0,0-64,64h0a64,64,0,0,0,128,0h0A64.072,64.072,0,0,0,176.984,368.344Zm0,96a32,32,0,1,1,32-32A32.038,32.038,0,0,1,176.984,464.344Z"></path>
+                                <path d="M400.984,368.344a64.073,64.073,0,0,0-64,64h0a64,64,0,0,0,128,0h0A64.072,64.072,0,0,0,400.984,368.344Zm0,96a32,32,0,1,1,32-32A32.038,32.038,0,0,1,400.984,464.344Z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col justify-center align-middle">
+                            <p class="text-3xl font-semibold leadi">200</p>
+                            <p class="capitalize">Orders</p>
+                        </div>
+                    </div>
+                    <div class="flex p-4 space-x-4 rounded-lg md:space-x-6 bg-gray-50 text-gray-800">
+                        <div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 bg-rose-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="h-9 w-9 text-gray-100">
+                                <path d="M256,16C123.452,16,16,123.452,16,256S123.452,496,256,496,496,388.548,496,256,388.548,16,256,16ZM403.078,403.078a207.253,207.253,0,1,1,44.589-66.125A207.332,207.332,0,0,1,403.078,403.078Z"></path>
+                                <path d="M256,384A104,104,0,0,0,360,280H152A104,104,0,0,0,256,384Z"></path>
+                                <polygon points="205.757 228.292 226.243 203.708 168 155.173 109.757 203.708 130.243 228.292 168 196.827 205.757 228.292"></polygon>
+                                <polygon points="285.757 203.708 306.243 228.292 344 196.827 381.757 228.292 402.243 203.708 344 155.173 285.757 203.708"></polygon>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col justify-center align-middle">
+                            <p class="text-3xl font-semibold leadi">7500</p>
+                            <p class="capitalize">New customers</p>
+                        </div>
+                    </div>
+                    <div class="flex p-4 space-x-4 rounded-lg md:space-x-6 bg-gray-50 text-gray-800">
+                        <div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 bg-rose-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="h-9 w-9 text-gray-100">
+                                <path d="M425.706,142.294A240,240,0,0,0,16,312v88H160V368H48V312c0-114.691,93.309-208,208-208s208,93.309,208,208v56H352v32H496V312A238.432,238.432,0,0,0,425.706,142.294Z"></path>
+                                <rect width="32" height="32" x="80" y="264"></rect>
+                                <rect width="32" height="32" x="240" y="128"></rect>
+                                <rect width="32" height="32" x="136" y="168"></rect>
+                                <rect width="32" height="32" x="400" y="264"></rect>
+                                <path d="M297.222,335.1l69.2-144.173-28.85-13.848L268.389,321.214A64.141,64.141,0,1,0,297.222,335.1ZM256,416a32,32,0,1,1,32-32A32.036,32.036,0,0,1,256,416Z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col justify-center align-middle">
+                            <p class="text-3xl font-semibold leadi">172%</p>
+                            <p class="capitalize">Growth</p>
+                        </div>
+                    </div>
+                    <div class="flex p-4 space-x-4 rounded-lg md:space-x-6 bg-gray-50 text-gray-800">
+                        <div class="flex justify-center p-2 align-middle rounded-lg sm:p-4 bg-rose-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="h-9 w-9 text-gray-100">
+                                <path d="M454.423,278.957,328,243.839v-8.185a116,116,0,1,0-104,0V312H199.582l-18.494-22.6a90.414,90.414,0,0,0-126.43-13.367,20.862,20.862,0,0,0-8.026,33.47L215.084,496H472V302.08A24.067,24.067,0,0,0,454.423,278.957ZM192,132a84,84,0,1,1,136,65.9V132a52,52,0,0,0-104,0v65.9A83.866,83.866,0,0,1,192,132ZM440,464H229.3L79.141,297.75a58.438,58.438,0,0,1,77.181,11.91l28.1,34.34H256V132a20,20,0,0,1,40,0V268.161l144,40Z"></path>
+                            </svg>
+                        </div>
+                        <div class="flex flex-col justify-center align-middle">
+                            <p class="text-3xl font-semibold leadi">17%</p>
+                            <p class="capitalize">Bounce rate</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+
+
+
+
+
+
+        <footer class="py-10 px-5 lg:px-0 bg-black">
+            <div class="container m-auto">
+                <div class="footer-container flex flex-col lg:flex-row lg:justify-around lg:items-center">
+                    <div class="footer-left space-y-5">
+                        <div class="text-slate-200 space-x-3 lg:space-x-5 font-light">
+                            <a class="link link-hover">Download Now</a>
+                            <a class="link link-hover">License</a>
+                        </div>
+                        <div class="text-slate-200 space-x-3 lg:space-x-5 font-light">
+                            <a class="link link-hover">About</a>
+                            <a class="link link-hover">Features</a>
+                            <a class="link link-hover">Pricing</a>
+                            <a class="link link-hover">Careers</a>
+                            <a class="link link-hover">Help</a>
+                            <a class="link link-hover">Privacy Policy</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-right space-y-5 pt-5">
+                        <p class="text-gray-300 text-xl">Get the App</p>
+                        <div class="download-img space-y-3">
+                            <img class="w-2/4 lg:w-2/3 cursor-pointer" src="./images/others/android.png" alt="" />
+                            <img class="w-2/4 lg:w-2/3 cursor-pointer" src="./images/others/ios.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-5 text-center">
+                    <p class="text-sm text-slate-500">&copy; 2023 Biker ZONE Bangladesh | ALL RIGHT RESERVED</p>
+                </div>
+            </div>
+        </footer>
+
+
+    
+    </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Get In Touch | Biker ZONE</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9248/9248278.png" type="image/x-icon" />
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+            .poppins {
+                font-family: "Poppins", sans-serif;
+            }
+        </style>
+
+        <!-- dais Ui & Tailwind CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- custom classes -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            clifford: "#da373d",
+                            "btn-bike": "#E76F51",
+                            transparent: "transparent",
+                            "main-slider": "#fdf1ee",
+                        },
+                    },
+                },
+            };
+        </script>
+    </head>
+    <body class="poppins">
+
+        <header class="bg-transparent sticky top-0 backdrop-blur-sm shadow-md z-10">
+            <nav class="container m-auto">
+                <div class="navbar">
+                    <div class="flex-1">
+                        <div class="dropdown">
+                            <label tabindex="0" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                                </svg>
+                            </label>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="shop.html">Shop</a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a class="font-semibold" href="contact-us.html">Contact</a></li>
+                            </ul>
+                        </div>
+                        <a class="cursor-pointer text-2xl sm:text-3xl md:text-4xl font-bold">Bike Dekho</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu text-base menu-horizontal px-1">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop.html">Shop</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a class="font-semibold" href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <a class="btn bg-btn-bike text-white hover:btn-error">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+
+        <!-- Tailblocks -->
+        <section class="text-gray-600 body-font relative">
+            <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+            <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14442.04211771523!2d89.86014948081072!3d25.18600014242055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fd660f2ee3bed1%3A0x3f0b28d1491ec289!2sBakshiganj!5e0!3m2!1sen!2sbd!4v1690091582364!5m2!1sen!2sbd"></iframe>
+                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                <div class="lg:w-1/2 px-6">
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                    <p class="mt-1">Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter</p>
+                </div>
+                <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+                    <a class="text-indigo-500 leading-relaxed">example@email.com</a>
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+                    <p class="leading-relaxed">123-456-7890</p>
+                </div>
+                </div>
+            </div>
+            <div class="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font">Get In Touch</h2>
+                <p class="leading-relaxed mb-5 text-gray-600">Post-ironic portland shabby chic echo park, banjo fashion axe</p>
+                <div class="relative mb-4">
+                <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+                <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+                <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+                <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Send Message</button>
+                <p class="text-xs text-gray-500 mt-3">Chicharrones blog helvetica normcore iceland tousled brook viral artisan.</p>
+            </div>
+            </div>
+        </section>
+
+
+
+
+        <footer class="py-10 px-5 lg:px-0 bg-black">
+            <div class="container m-auto">
+                <div class="footer-container flex flex-col lg:flex-row lg:justify-around lg:items-center">
+                    <div class="footer-left space-y-5">
+                        <div class="text-slate-200 space-x-3 lg:space-x-5 font-light">
+                            <a class="link link-hover">Download Now</a>
+                            <a class="link link-hover">License</a>
+                        </div>
+                        <div class="text-slate-200 space-x-3 lg:space-x-5 font-light">
+                            <a class="link link-hover">About</a>
+                            <a class="link link-hover">Features</a>
+                            <a class="link link-hover">Pricing</a>
+                            <a class="link link-hover">Careers</a>
+                            <a class="link link-hover">Help</a>
+                            <a class="link link-hover">Privacy Policy</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-right space-y-5 pt-5">
+                        <p class="text-gray-300 text-xl">Get the App</p>
+                        <div class="download-img space-y-3">
+                            <img class="w-2/4 lg:w-2/3 cursor-pointer" src="./images/others/android.png" alt="" />
+                            <img class="w-2/4 lg:w-2/3 cursor-pointer" src="./images/others/ios.png" alt="" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pt-5 text-center">
+                    <p class="text-sm text-slate-500">&copy; 2023 Biker ZONE Bangladesh | ALL RIGHT RESERVED</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
