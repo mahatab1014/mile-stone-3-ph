@@ -79,8 +79,8 @@
             </section>
 
             <!-- Featured Products -->
-            <section>
-                <div class="container m-auto space-y-10 px-5 md:px-0">
+            <section class="bg-[#f7f9ff]">
+                <div class="container m-auto space-y-10 px-5 py-10 md:px-0">
                     <!-- Featured Products Titles -->
                     <div class="featured-products-titles text-center space-y-5">
                         <h2 class="text-primary-color text-3xl md:text-4xl font-extrabold">Our Featured Products</h2>
@@ -90,7 +90,7 @@
                     <!-- Featured Products Container -->
                     <div class="featured-products-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
 
-                        <div class="featured-products-item flex flex-col items-center text-center bg-gradient-to-b from-gray-100 to-white rounded-xl py-10 px-5 cursor-pointer">
+                        <div class="featured-products-item flex flex-col items-center text-center bg-gradient-to-b from-gray-100 to-white rounded-xl py-10 px-5 cursor-pointer shadow-md">
                             <div class="featured-products-images">
                                 <img class="hover:animate-pulse" src="images/tea-1.png" alt="">
                             </div>
@@ -99,7 +99,7 @@
                                 <p class="text-secondary-color text-base font-semibold">Creamer could be replaced by fresh milk</p>
                             </div>
                         </div>
-                        <div class="featured-products-item flex flex-col items-center text-center bg-gradient-to-b from-gray-100 to-white rounded-xl py-10 px-5 cursor-pointer">
+                        <div class="featured-products-item flex flex-col items-center text-center bg-gradient-to-b from-gray-100 to-white rounded-xl py-10 px-5 cursor-pointer shadow-md">
                             <div class="featured-products-images">
                                 <img class="hover:animate-pulse" src="images/tea-2.png" alt="">
                             </div>
@@ -108,7 +108,7 @@
                                 <p class="text-secondary-color text-base font-semibold">Creamer could be replaced by fresh milk</p>
                             </div>
                         </div>
-                        <div class="featured-products-item flex flex-col items-center text-center bg-gradient-to-b from-gray-100 to-white rounded-xl py-10 px-5 cursor-pointer">
+                        <div class="featured-products-item flex flex-col items-center text-center bg-gradient-to-b from-gray-100 to-white rounded-xl py-10 px-5 cursor-pointer shadow-md">
                             <div class="featured-products-images">
                                 <img class="hover:animate-pulse" src="images/tea-3.png" alt="">
                             </div>
@@ -117,7 +117,7 @@
                                 <p class="text-secondary-color text-base font-semibold">Creamer could be replaced by fresh milk</p>
                             </div>
                         </div>
-                        <div class="featured-products-item flex flex-col items-center text-center bg-gradient-to-b from-gray-100 to-white rounded-xl py-10 px-5 cursor-pointer">
+                        <div class="featured-products-item flex flex-col items-center text-center bg-gradient-to-b from-gray-100 to-white rounded-xl py-10 px-5 cursor-pointer shadow-md">
                             <div class="featured-products-images">
                                 <img class="hover:animate-pulse" src="images/tea-4.png" alt="">
                             </div>
@@ -136,19 +136,19 @@
             <!-- Fresh Tea -->
             <section>
                 
-                <div class="container m-auto px-5 py-10">
+                <div class="container m-auto px-5 py-10 lg:py-20">
                     <div class="fresh-tea-container grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10">
 
                         <!-- Fresh Tea Images -->
-                        <div class="fresh-tea-images grid grid-cols-1 md:grid-cols-2 gap-5 order-2 lg:order-1">
-                            <div class="bg-gradient-to-b from-amber-100 to-slate-100 rounded-md"></div>
-                            <div class="p-5 bg-gradient-to-b from-slate-100 to-amber-100 cursor-pointer row-span-2 rounded-md flex items-center justify-center">
-                                <img class="hover:animate-pulse" src="images/fresh-1.png" alt="fresh tea">
+                        <div class="fresh-tea-images grid grid-cols-2 gap-5 order-2 lg:order-1">
+                            <div class="bg-gradient-to-b from-amber-100 to-slate-100 rounded-md py-5"></div>
+                            <div class="p-5 bg-gradient-to-b from-slate-100 to-amber-100 hover:from-amber-100 hover:to-slate-100 cursor-pointer row-span-2 rounded-md flex items-center justify-center">
+                                <img class="" src="images/fresh-1.png" alt="fresh tea">
                             </div>
-                            <div class="p-10 lg:p-0 bg-gradient-to-b from-slate-100 cursor-pointer to-amber-100 row-span-2 rounded-md flex items-center justify-center">
-                                <img class="hover:animate-pulse" src="images/fresh-2.png" alt="fresh tea">
+                            <div class="p-10 lg:p-0 bg-gradient-to-b from-slate-100 to-amber-100 hover:from-amber-100 hover:to-slate-100 cursor-pointer row-span-2 rounded-md flex items-center justify-center">
+                                <img class="" src="images/fresh-2.png" alt="fresh tea">
                             </div>
-                            <div class="bg-gradient-to-b from-amber-100 to-slate-100 rounded-md"></div>
+                            <div class="bg-gradient-to-b from-amber-100 to-slate-100 rounded-md py-5"></div>
                         </div>
                         <!-- Fresh TEA Info -->
                         <div class="fresh-tea-info text-center lg:text-left space-y-5 order-1 lg:order-2">
@@ -165,6 +165,63 @@
                     </div>
                 </div>
 
+            </section>
+
+            <!-- Testimonial -->
+            <section class="pb-10">
+                <div class="testimonial-container container m-auto bg-gradient-to-l from-[#f00] to-[#ff8938] p-10 md:p-14 rounded-lg">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                        <!-- Testimonial Left Content -->
+                        <div class="testimonial-info space-y-5">
+                            <h2 class="text-[#F4F4F4] text-3xl md:text-4xl font-extrabold">Meet Our Super <br>Clients</h2>
+                            <p  class="text-[#F4F4F4] text-base font-medium">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+                            <button class="btn bg-white font-extrabold">Show All</button>
+                        </div>
+                        <!-- Testimonial Right Content -->
+                        <div class="client-review relative space-y-16 lg:space-y-10 flex flex-col items-end mt-5 md:mt-0">
+
+                            <div class="client-review-item bg-white p-5 lg:p-10 rounded-lg opacity-40 lg:w-3/4 cursor-pointer">
+                                <div class="client-profile-pic relative">
+                                    <img class="absolute -top-12 -left-14 lg:-top-16 lg:-left-16 rounded-full border-4 border-white" src="images/client.png" alt="">
+                                </div>
+                                <div class="client-review-info">
+                                    <p class="text-base text-secondary-color ">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                                    <div class="client-info pt-5">
+                                        <h4 class="text-primary-color font-bold">Ilham Yuda</h4>
+                                        <p class="text-[#5D5A6F] font-medium">Businessman</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="client-review-item bg-white p-5 lg:p-10 rounded-lg absolute -left-0 top-10 lg:top-20 z-10 lg:w-3/4 cursor-pointer">
+                                <div class="client-profile-pic relative">
+                                    <img class="absolute -top-12 -left-14 lg:-top-16 lg:-left-16 rounded-full border-4 border-white" src="images/client.png" alt="">
+                                </div>
+                                <div class="client-review-info">
+                                    <p class="text-base text-secondary-color ">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                                    <div class="client-info pt-5">
+                                        <h4 class="text-primary-color font-bold">Ilham Yuda</h4>
+                                        <p class="text-[#5D5A6F] font-medium">Businessman</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="client-review-item bg-white p-5 lg:p-10 rounded-lg opacity-40 lg:w-3/4 cursor-pointer">
+                                <div class="client-profile-pic relative">
+                                    <img class="absolute -top-12 -left-14 lg:-top-16 lg:-left-16 rounded-full border-4 border-white" src="images/client.png" alt="">
+                                </div>
+                                <div class="client-review-info">
+                                    <p class="text-base text-secondary-color ">We are providing the best and suitable home insurance services for the people who are interested to treatment</p>
+                                    <div class="client-info pt-5">
+                                        <h4 class="text-primary-color font-bold">Ilham Yuda</h4>
+                                        <p class="text-[#5D5A6F] font-medium">Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </section>
 
 
