@@ -1,13 +1,292 @@
 <!DOCTYPE html>
-<html lang="en" data-mode="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEA HOUSE</title>
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9248/9248278.png" type="image/x-icon">
+<html lang="en" data-theme="light">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Legal System</title>
+        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/9248/9248278.png" type="image/x-icon">
 
-</head>
-<body>
-    
-</body>
+        <!--  Poppins & EB Garamond | GOOGLE FONT -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+            .garamond{
+                font-family: 'EB Garamond', serif;
+            }
+            .poppins{
+                font-family: 'Poppins', sans-serif;
+            }
+        </style>
+
+        <!-- daisyUi & Tailwind.CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <!-- custom color in Tailwind.css -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    'primary-color': '#414040',
+                    'secondary-color': '#707070',
+                  }
+                }
+              }
+            }
+          </script>
+
+        <!-- Font Awesome -->
+        <script src="https://kit.fontawesome.com/fbcff7765f.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        
+        <!-- Header Navbar -->
+        <header class="w-full backdrop-blur-md poppins shadow-lg sticky top-0 z-50">
+            <nav class="container m-auto">
+                <div class="navbar">
+                    <div class="navbar-start flex-1 flex-row-reverse justify-between sm:flex-auto sm:flex-row sm:justify-normal">
+                      <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </label>
+                        <ul tabindex="0" class="menu menu-sm text-secondary-color dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 -left-40 sm:left-0">
+                            <li><a>Home</a></li>
+                            <li><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+                            <li><a class="btn btn-primary flex content-center sm:hidden">Free Consultation</a></li>
+                        </ul>
+                      </div>
+                      <a class="cursor-pointer" href="index.html">
+                        <img src="images/logo2.png" alt="">
+                      </a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1 text-secondary-color">
+                        <li><a>Home</a></li>
+                        <li><a>Services <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Cases <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Blog <i class="fa-solid fa-chevron-right"></i></a></li>
+                        <li><a>Contact Us <i class="fa-solid fa-chevron-right"></i></a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end hidden sm:inline-flex">
+                      <a class="btn btn-primary">Free Consultation</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <main>
+
+          <!-- Banner Section -->
+            <section>
+                <div class="hero min-h-screen mix-blend-darken" style="background-image: url('images/banner.png');">
+                    <div class=""></div>
+                    <div class="hero-content text-center text-neutral-content">
+                      <div class="max-w-md">
+                        <h1 class="garamond mb-5 text-5xl font-bold">We Provide Effective <br> Legal Solutions</h1>
+                        <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <div class="relative">
+                            <input type="text" placeholder="Search your services" class="input input-bordered w-full pr-16" /> 
+                            <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Search</button>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+
+          <!-- The Legal Practice Area -->
+            <section class="py-20 px-5">
+
+              <div class="container m-auto">
+
+                <!-- Section Titles -->
+                <div class="text-center space-y-5">
+                  <h2 class="garamond text-3xl lg:text-5xl font-extrabold text-primary-color">The Legal Practice Area</h2>
+                  <p class="text-secondary-color font-normal poppins w-auto md:w-2/3 m-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                </div>
+                <!-- The Legal Practice Area -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 md:mt-10">
+
+                  <div class="legal-practice-item flex flex-col items-center p-16 space-y-5 border lg:border-0 lg:border-b">
+                    <div class="">
+                      <img src="images/business.png" alt="">
+                    </div>
+                    <div class="legal-practice-caption text-center space-y-5">
+                      <h3 class="text-primary-color text-3xl md:text-4xl garamond font-extrabold">Business Law</h3>
+                      <p class="text-secondary-color poppins font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <button class="btn btn-primary rounded-full text-lg">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="legal-practice-item flex flex-col items-center p-16 space-y-5 bg-gradient-to-b from-gray-100 border lg:border-0 lg:border-l lg:border-r lg:border-b">
+                    <div class="">
+                      <img src="images/criminal.png" alt="">
+                    </div>
+                    <div class="legal-practice-caption text-center space-y-5">
+                      <h3 class="text-primary-color text-3xl md:text-4xl garamond font-extrabold">Criminal Law</h3>
+                      <p class="text-secondary-color poppins font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <button class="btn btn-primary rounded-full text-lg">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="legal-practice-item flex flex-col items-center p-16 space-y-5 border lg:border-0 lg:border-b">
+                    <div class="">
+                      <img src="images/child.png" alt="">
+                    </div>
+                    <div class="legal-practice-caption text-center space-y-5">
+                      <h3 class="text-primary-color text-3xl md:text-4xl garamond font-extrabold">Child Support</h3>
+                      <p class="text-secondary-color poppins font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <button class="btn btn-primary rounded-full text-lg">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="legal-practice-item flex flex-col items-center p-16 space-y-5 border lg:border-0">
+                    <div class="">
+                      <img src="images/education.png" alt="">
+                    </div>
+                    <div class="legal-practice-caption text-center space-y-5">
+                      <h3 class="text-primary-color text-3xl md:text-4xl garamond font-extrabold">Education Law</h3>
+                      <p class="text-secondary-color poppins font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <button class="btn btn-primary rounded-full text-lg">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="legal-practice-item flex flex-col items-center p-16 space-y-5 border lg:border-0 lg:border-l lg:border-r">
+                    <div class="">
+                      <img src="images/divorce.png" alt="">
+                    </div>
+                    <div class="legal-practice-caption text-center space-y-5">
+                      <h3 class="text-primary-color text-3xl md:text-4xl garamond font-extrabold">Divorce Law</h3>
+                      <p class="text-secondary-color poppins font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <button class="btn btn-primary rounded-full text-lg">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="legal-practice-item flex flex-col items-center p-16 space-y-5 border lg:border-0">
+                    <div class="">
+                      <img src="images/child.png" alt="">
+                    </div>
+                    <div class="legal-practice-caption text-center space-y-5">
+                      <h3 class="text-primary-color text-3xl md:text-4xl garamond font-extrabold">Tax Law</h3>
+                      <p class="text-secondary-color poppins font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                      <button class="btn btn-primary rounded-full text-lg">
+                        <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+          <!-- Testimonial Section -->
+            <section>
+              <div class="container m-auto">
+                
+                <!-- Section Titles -->
+                <div class="text-center space-y-5 py-5">
+                  <h2 class="garamond text-3xl lg:text-5xl font-extrabold text-primary-color">What Our Client Say</h2>
+                  <p class="text-secondary-color font-normal poppins w-auto md:w-2/3 m-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                </div>
+
+                
+                <div class="flex flex-col items-center w-full gap-4 p-8 mb-8 md:flex-row md:mb-0 flex-between">
+                  <div class="bg-white dark:bg-gray-800 w-72 shadow-lg mx-auto rounded-xl p-4">
+                      <p class="text-gray-600 dark:text-white">
+                          <span class="text-lg font-bold text-indigo-500">
+                              “
+                          </span>
+                          To get social media testimonials like these, keep your customers engaged with your social media accounts by posting regularly yourself
+                          <span class="text-lg font-bold text-indigo-500">
+                              ”
+                          </span>
+                      </p>
+                      <div class="flex items-center mt-4">
+                          <a href="#" class="relative block">
+                              <img alt="profil" src="images/client-pic.png" class="mx-auto object-cover rounded-full h-10 w-10 "/>
+                          </a>
+                          <div class="flex flex-col justify-between ml-2">
+                              <span class="text-sm font-semibold text-indigo-500">
+                                  Jean Miguel
+                              </span>
+                              <span class="flex items-center text-xs dark:text-gray-400">
+                                  User of Tail-Kit
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="bg-white dark:bg-gray-800 w-72 shadow-lg mx-auto rounded-xl p-4">
+                      <p class="text-gray-600 dark:text-white">
+                          <span class="text-lg font-bold text-indigo-500">
+                              “
+                          </span>
+                          To get social media testimonials like these, keep your customers engaged with your social media accounts by posting regularly yourself
+                          <span class="text-lg font-bold text-indigo-500">
+                              ”
+                          </span>
+                      </p>
+                      <div class="flex items-center mt-4">
+                          <a href="#" class="relative block">
+                              <img alt="profil" src="images/client-pic.png" class="mx-auto object-cover rounded-full h-10 w-10 "/>
+                          </a>
+                          <div class="flex flex-col justify-between ml-2">
+                              <span class="text-sm font-semibold text-indigo-500">
+                                  Jean Miguel
+                              </span>
+                              <span class="flex items-center text-xs dark:text-gray-400">
+                                  User of Tail-Kit
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="bg-white dark:bg-gray-800 w-72 shadow-lg mx-auto rounded-xl p-4">
+                      <p class="text-gray-600 dark:text-white">
+                          <span class="text-lg font-bold text-indigo-500">
+                              “
+                          </span>
+                          To get social media testimonials like these, keep your customers engaged with your social media accounts by posting regularly yourself
+                          <span class="text-lg font-bold text-indigo-500">
+                              ”
+                          </span>
+                      </p>
+                      <div class="flex items-center mt-4">
+                          <a href="#" class="relative block">
+                              <img alt="profil" src="images/client-pic.png" class="mx-auto object-cover rounded-full h-10 w-10 "/>
+                          </a>
+                          <div class="flex flex-col justify-between ml-2">
+                              <span class="text-sm font-semibold text-indigo-500">
+                                  Jean Miguel
+                              </span>
+                              <span class="flex items-center text-xs dark:text-gray-400">
+                                  User of Tail-Kit
+                              </span>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+              </div>
+            </section>
+
+
+        </main>
+
+
+    </body>
 </html>
